@@ -25,7 +25,7 @@
     float: none;
     top: 50%;
     right: 50%;
-    transform: translate(-38.5%, -38.5%);
+    transform: translate(-37.8%, -37.8%);
 
 }
 .navigation li{
@@ -81,4 +81,30 @@ i {
 img{
     padding-left: 10px;
     padding-right: 10px;
+}
+.text h1{
+    color: #09f;
+}
+.text p{
+    color: #f60;
+}
+.about h1{
+    text-align: center;
+    color: #09f;
+    text-decoration: underline;
+    text-decoration-color: #f60;
+    margin-left: 0px;
+}
+.about {
+    margin-left: 10px;
+}
+.about h3{
+    color: #f60;
+    font-weight: bolder;
+}
+.about a{
+    text-decoration: none;
+}
+.about li{
+    font-size: 18px;
 }
