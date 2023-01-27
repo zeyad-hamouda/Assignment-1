@@ -1,55 +1,65 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
-.navigation{    
-    background-color: #09f; overflow: hidden;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0%;
-}
-
-.navigation a{
-    float: right;
-    text-align: center;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    background-color: #09f;
     color: #ddd;
-    padding: 14px 16px;
-    text-decoration: none;
     font-size: 17px;
+    font-weight: 1000;
 }
-.navigation a:hover{
-    background-color: #87CEEB;
-    color: black;
+header li{
+    list-style-type: none;
 }
-.center-nav{
-    float: none;
-    top: 50%;
-    right: 50%;
-    transform: translate(-37.8%, -37.8%);
-
-}
-.navigation li{
-    list-style: none;
-    display: inline;
-    float: left;
-    text-align: center;
+header a{
+    text-decoration: none;
     color: #ddd;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
 }
 
-.navigation a.active{
+.navigationbar{
+    text-decoration: none;
+}
+.navigationbar li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navigationbar li a{
+    transition: all 0.3s ease 0s;
+}
+.navigationbar li a:hover{
+    color: #87CEEB;
+}
+.navigationbar li a.active{
+    color: #f60;
+}
+
+button{
+    padding: 9px 25px;
     background-color: #f60;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
     color: #ddd;
+    font-size: 17px;
 }
-.navigation .icon{
-    display: none;
+button:hover{
+    color: #87CEEB;
 }
+
+span{
+    cursor: pointer;
+}
+
 body{
     background-color: #FFFDD0;
-    font-family: 'Raleway', sans-serif;
-    text-align: left;
 }
 
 .container {
@@ -61,25 +71,18 @@ body{
     font-size: 20px;
     margin-right: 10px;
 }
-hr{
-    background-color: #09f;
-    height: 6px;
-    width: 25%;
-    margin-left: 37%;
-}
-.image{
-    padding-left: 10px;
-}
+
 footer{
     background-color: #09f;
-    padding: 11px 16px;
-    
+    padding: 45px 5%;  
+    display: flex;
+    align-items: center;
 }
 i {
     margin-right: 20px;
 }
-img{
-    padding-left: 10px;
+.image{
+    padding-left: 20px;
     padding-right: 10px;
 }
 .text h1{
@@ -105,6 +108,8 @@ img{
 .about a{
     text-decoration: none;
 }
-.about li{
-    font-size: 15px;
-}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
