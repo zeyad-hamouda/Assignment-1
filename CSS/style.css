@@ -60,6 +60,7 @@ span{
 
 body{
     background-color: #FFFDD0;
+    overflow: hidden;
 }
 
 .container {
